@@ -51,7 +51,7 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('');
+            background-image: url('photos/photo1.jpg');
             background-size: cover;
             background-position: center;
             transform: scale(1.04);
@@ -281,7 +281,17 @@
     <div class="scroll-hint">↓</div>
 </section>
 
-
+<section class="photos">
+    <div class="container">
+        <h2 class="section-title fade-up">Наши виды</h2>
+        <div class="photos-grid">
+            <img src="photos/photo1.jpg" alt="Фото">
+            <img src="photos/photo2.jpg" alt="Фото">
+            <img src="photos/photo3.jpg" alt="Фото">
+            <img src="photos/photo4.jpg" alt="Фото">
+        </div>
+    </div>
+</section>
 
 <section class="amenities">
     <div class="container">
@@ -312,7 +322,29 @@
     </div>
 </section>
 
-
+<section class="reviews">
+    <div class="container">
+        <h2 class="section-title fade-up">Отзывы клиентов</h2>
+        <p class="section-sub fade-up">Что говорят о нас на 2ГИС</p>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">«Хорошая, уютная база. Домики в хорошем состоянии, все для комфортного проживания есть. Рядом несколько кафе. База в стороне от суеты. Вид на горы. Хорошие хозяева. Цена адекватная. Приедем в следующем году.»</p>
+                <p class="review-author">— Дмитрий Овчинников</p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">«Все понравилось. Хорошие люди. Душевная атмосфера. Мангальная зона. Казан. Газовая плита. За свои деньги отлично.»</p>
+                <p class="review-author">— Альбина Каримова</p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">«Отличная уютная база, комфортные домики с панорамными окнами. Внутри всё есть: посуда, чайник, фен, горячая вода. Душевные хозяева. В отдельном здании кухня со столиками. Вернёмся обязательно.»</p>
+                <p class="review-author">— Olga K</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="about">
     <div class="container">
@@ -344,8 +376,8 @@
     if (bg) {
         const img = new Image();
         img.onload = () => bg.classList.add('loaded');
-        img.src = '';
-        bg.style.backgroundImage = `url('')`;
+        img.src = 'photos/photo1.jpg';
+        bg.style.backgroundImage = `url('photos/photo1.jpg')`;
     }
 
     const io = new IntersectionObserver(entries => {
